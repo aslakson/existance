@@ -1,0 +1,26 @@
+<template name="PublicationDetail">
+  
+  {{> Navicon}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">{{publication.title}}</h1>
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+    {{> Search}}
+      <section class="concept">
+        <article>
+          {{{publication.content}}}
+        </article>
+        <aside>
+            <ul>
+                {{#each publication.links}}
+                <li><a href="{{url}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </aside>
+        <hr>
+      </section>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

@@ -1,0 +1,1 @@
+ConceptDetail = new Mongo.Collection('conceptDetail');

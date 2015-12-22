@@ -1,0 +1,8 @@
+<template name="Search">
+  {{#contentFor "headerButtonRight"}}
+    <div class="typeahead-container">
+      <input type="text" class="typeahead" name="lexicon-search" placeholder="Search" autocomplete="off" spellcheck="off" data-sets="search_data" data-selected="selected">    
+    </div>
+  {{/contentFor}}
+</template>
+<template name="SearchItem">{{title}}</template>

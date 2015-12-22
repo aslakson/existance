@@ -1,0 +1,38 @@
+<template name="Home">
+
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Objectivist Lexicon</h1>
+    {{> Search}}
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+        <h2 class="sub-title">Top Concepts</h2>
+      {{#ionList}}
+        {{#each popular}}
+          {{#ionItem path="concepts.detail" slug=this.slug buttonRight=true avatar=true class="item-icon-right"}}
+            {{title}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+        <h2 class="sub-title">Publications</h2>
+      {{#ionList}}
+        {{#each publications}}
+          {{#ionItem path="publications.detail" slug=this.slug buttonRight=true avatar=true class="item-icon-right"}}
+            {{title}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

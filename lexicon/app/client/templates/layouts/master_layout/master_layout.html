@@ -1,0 +1,17 @@
+<template name="MasterLayout">
+  {{#ionBody}}
+    {{#ionSideMenuContainer}}
+      {{#ionSideMenus}}
+        {{> LeftNav}}
+      {{/ionSideMenus}}
+      {{#ionSideMenuContent}}       
+        {{> ionNavBar}}
+        
+        {{#ionNavView}}
+          {{> yield}}
+        {{/ionNavView}}
+      {{/ionSideMenuContent}}
+    {{/ionSideMenuContainer}}
+  {{/ionBody}}
+
+</template>

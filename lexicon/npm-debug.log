@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'iron-meteor' ]
+2 info using npm@2.14.4
+3 info using node@v0.10.26
+4 verbose install initial load of /src/existance/package.json
+5 verbose installManyTop reading scoped package data from /src/existance/node_modules/JSONStream/package.json
+6 verbose installManyTop reading scoped package data from /src/existance/node_modules/event-stream/package.json
+7 verbose installManyTop reading scoped package data from /src/existance/node_modules/extfs/package.json
+8 verbose installManyTop reading scoped package data from /src/existance/node_modules/mongoose/package.json
+9 verbose installManyTop reading scoped package data from /src/existance/node_modules/path/package.json
+10 verbose installManyTop reading scoped package data from /src/existance/node_modules/readdirp/package.json
+11 verbose installManyTop reading scoped package data from /src/existance/node_modules/request/package.json
+12 verbose installManyTop reading scoped package data from /src/existance/node_modules/underscore.string/package.json
+13 verbose installManyTop reading scoped package data from /src/existance/node_modules/url/package.json
+14 verbose installManyTop reading scoped package data from /src/existance/node_modules/x-ray/package.json
+15 info package.json event-stream@3.3.1 No license field.
+16 info package.json path@0.11.14 path is also the name of a node core module.
+17 info package.json extfs@0.0.7 No license field.
+18 info package.json url@0.10.3 url is also the name of a node core module.
+19 info package.json x-ray@2.0.2 No license field.
+20 verbose readDependencies loading dependencies from /src/existance/package.json
+21 silly cache add args [ 'iron-meteor', null ]
+22 verbose cache add spec iron-meteor
+23 silly cache add parsed spec { raw: 'iron-meteor',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'iron-meteor',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: '*',
+23 silly cache add   type: 'range' }
+24 silly addNamed iron-meteor@*
+25 verbose addNamed "*" is a valid semver range for iron-meteor
+26 silly addNameRange { name: 'iron-meteor', range: '*', hasData: false }
+27 silly mapToRegistry name iron-meteor
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/iron-meteor
+31 verbose addNameRange registry:https://registry.npmjs.org/iron-meteor not in flight; fetching
+32 verbose request uri https://registry.npmjs.org/iron-meteor
+33 verbose request no auth needed
+34 info attempt registry request try #1 at 17:06:20
+35 verbose request id 6907d79e336a61b7
+36 http request GET https://registry.npmjs.org/iron-meteor
+37 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+38 info attempt registry request try #2 at 17:06:30
+39 http request GET https://registry.npmjs.org/iron-meteor
+40 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+41 info attempt registry request try #3 at 17:07:30
+42 http request GET https://registry.npmjs.org/iron-meteor
+43 verbose stack Error: getaddrinfo ENOTFOUND
+43 verbose stack     at errnoException (dns.js:37:11)
+43 verbose stack     at Object.onanswer [as oncomplete] (dns.js:124:16)
+44 verbose cwd /src/existance/lexicon
+45 error Darwin 14.4.0
+46 error argv "node" "/usr/local/bin/npm" "install" "iron-meteor"
+47 error node v0.10.26
+48 error npm  v2.14.4
+49 error code ENOTFOUND
+50 error errno ENOTFOUND
+51 error syscall getaddrinfo
+52 error network getaddrinfo ENOTFOUND
+52 error network This is most likely not a problem with npm itself
+52 error network and is related to network connectivity.
+52 error network In most cases you are behind a proxy or have bad network settings.
+52 error network
+52 error network If you are behind a proxy, please make sure that the
+52 error network 'proxy' config is set properly.  See: 'npm help config'
+53 verbose exit [ 1, true ]

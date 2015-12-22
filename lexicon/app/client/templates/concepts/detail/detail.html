@@ -1,0 +1,29 @@
+<template name="ConceptDetail">
+  
+  {{> Navicon}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">{{concept.title}}</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <section class="concept">
+      {{#each concept.articles}}
+        <article>
+          <p>{{{content}}}</p>
+          <footer>
+            <figure>
+                <a class="concept-img" href="{{url}}" title="{{attribution}}" target="_blank"><img src="{{img}}"></a>
+                <figcaption>
+                    <a href="{{url}}" title="{{attribution}}" target="_blank">{{{attribution}}}</a>
+                </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <hr>
+      {{/each}}
+      </section>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

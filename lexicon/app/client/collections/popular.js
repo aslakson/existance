@@ -1,0 +1,1 @@
+Popular = new Mongo.Collection('popular');

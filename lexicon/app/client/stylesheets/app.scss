@@ -1,0 +1,111 @@
+// Custom
+@import 'app-mixins';
+@import 'app-variables';
+
+// Ionic
+@import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+section {
+  padding: 1em 3em;
+  
+  article {
+      padding: 1em 0;
+  }
+
+  figure {
+      min-height: 10em;
+      position: relative;
+      
+      .concept-img {
+          left: 0;
+          max-height: 9em;
+          position: absolute;
+      }
+      figcaption {
+          padding-left: 6em;
+      }
+  }
+}
+
+.typeahead-container {
+  width: 14em;
+}
+
+.twitter-typeahead {
+  width: 100%;  
+}
+
+input.typeahead {
+  border: 1px solid #b2b2b2;
+  padding: 0 .5em;
+}
+
+.tt-menu {
+  background-color: white;
+  border: 1px solid #b2b2b2;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.tt-suggestion {
+  font-style: italic;
+  padding: .5em;
+  
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+
+.tt-group {
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  padding: .5em;
+}
+
+.active a {
+  background-color: #eee;
+}
+
+.button-circle {
+  border-radius: 100%;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.bar .title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.empty-view {
+  color: #ccc;
+  text-align: center;
+  padding-top: 160px;
+
+  i {
+    display: block;
+    margin: 0 auto 12px auto;
+    font-size: 60px;
+  }
+}
+
+.sign-in-modal {
+  p {
+    margin: 48px 0;
+  }
+}
+
+.sub-title {
+    font-size: 1.5em;
+    padding: .5em 2em;
+    margin: 0;
+}
+
+.typeahead-container {
+  position: absolute;
+  right: .5em;
+  z-index:2;
+}

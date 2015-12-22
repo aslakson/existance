@@ -1,0 +1,23 @@
+<template name="CategoryDetail">
+  {{> Navicon}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">{{category.title}}</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <section class="category">
+      <p>{{category.definition}}</p>
+      {{#ionList}}
+      {{#each concepts}}
+          {{#ionItem path="concept.detail" slug=this.slug buttonRight=true avatar=true class="item-icon-right"}}
+            {{title}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+      {{/each}}
+      {{/ionList}}
+      </section>
+    {{/ionContent}}
+  {{/ionView}}
+</template>
