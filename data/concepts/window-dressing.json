@@ -1,5 +1,5 @@
 {
-  "title": "“Window-Dressing”",
+  "title": "“Window Dressing”",
   "articles": [
     {
       "content": "The non-philosophical attitude of most rightists, who surrendered the intellect\nto the leftists .&#xA0;.&#xA0;. permitted the intellectuals to play the game of &#x201C;window\ndressing,&#x201D; i.e., to preach political tolerance or impartiality and to practice\nit, on suitable occasions, by featuring the weakest, most befuddled champion of\ncapitalism as a representative of the right. (Which led people to the\nconclusion: &#x201C;If <em>this</em> is the best that can be said for the right, then the\nleftist position must be true.&#x201D;)",
@@ -9,6 +9,13 @@
     },
     {
       "content": null
+    }
+  ],
+  "acknowledgement": "\n\n<p>\n<a href=\"http://aynrandlexicon.com/ayn-rand-works/the-ayn-rand-letter.html\"><img src=\"http://cultureofreason.org/style/img/theaynrandletter.jpg\" alt=\"The Ayn&#xA0;Rand Letter\"></a>\n</p>\n<p>\n&#x201C;The Disfranchisement of the Right,&#x201D;<br>\n<a href=\"http://aynrandlexicon.com/ayn-rand-works/the-ayn-rand-letter.html\"><cite>The Ayn&#xA0;Rand Letter</cite></a>, I, 6, 1\n</p>\n\n",
+  "links": [
+    {
+      "url": "http://aynrandlexicon.com/lexicon/capitalism.html",
+      "title": "Capitalism"
     }
   ]
 }
